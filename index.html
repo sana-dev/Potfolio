@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Sana Mehak</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <img class="nav-img" src="img/cat_image-removebg.png" alt="cat-image">
+            <h3>Sana Mehak</h3>
+        </div>
+        <div class="nav-right">
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000000">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li> <a href="#home">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a> </li>
+                <li> <a href="#mywork">My Work</a> </li>
+            </ul>
+        </div>
+
+
+        <ul>
+            <li class="hideOnMobile"> <a href="#home">Home</a></li>
+            <li class="hideOnMobile"> <a href="#about">About</a></li>
+            <li class="hideOnMobile"><a href="#contact">Contact</a> </li>
+            <li class="hideOnMobile"> <a href="#mywork">My Work</a> </li>
+            <button class="nav-button " onclick=showSidebar()>☰</button>
+        </ul>
+    </nav>
+    </section>
+    <section class="hero">
+        <div class="left-container">
+            <h1> Hello! I'm Sana Mehak </h1>
+            <p>
+                I'm a fullstack developer/UX designer based in Sweden.
+                I focus on creating an experience of reliable and useful interaction.
+                I am passionate about
+                creating a strong design strategy that tells a story.
+            </p>
+        </div>
+        <div class="right-container">
+            <img src="img/gif.gif" alt="Your Image">
+        </div>
+    </section>
+    <button class="btn" onclick="window.open('img/sana.pdf')">
+        Download CV
+    </button>
+    <button class="btn-contact" onclick="location.href('./#contact')">
+        contact info
+    </button>
+    <div class="socials">
+        <img src="img/linkedin.png" alt="linkedin" class="icon"
+            onclick="location.href='http://linkedin.com/in/sana-mehak/'">
+
+        <img src="img/github.png" alt="github" class="icon" onclick="location.href='https://github.com/sana-dev'">
+    </div>
+
+    <section id="about">
+        <h2> About Me</h2>
+        <p class="about-text">
+            👋 Hi there! I’m Sana Mehak
+            <br>
+            🌟 What I Do:
+            I'm a Fullstack Developer and UX Designer based in Sweden. I focus on creating reliable and useful
+            interactions that enhance user experience.
+            <br>
+            🎨 My Passion:
+            I'm passionate about crafting strong design strategies that tell compelling stories.
+            <br>
+            My Hobbies:<br>
+            😺 Cat enthusiast<br>
+            ✈️ Avid traveler<br>
+            🎨 Sketch artist<br>
+            🎵 Music fuels my coding sessions
+            <br>
+
+            🚀 Key Skills:
+
+            Fullstack Development
+            UX/UI Design
+            Storytelling through Design
+            <br>
+            🎯 Recent Projects:
+            <a href="https://bingey.netlify.app/"> Project 1</a>
+            <a href="https://cityweather01.netlify.app/"> Project 2</a>
+
+            <br>
+            💬 Let's Connect:
+            Feel free to reach out via Email:Sanamehak099@gmail.com or connect with me on <a
+                href="http://linkedin.com/in/sana-mehak"> LinkedIn</a>
+
+
+        </p>
+        <img src="img/me.jpeg">
+    </section>
+    <section id="mywork">
+        <div class="section">
+            <h2> My Work</h2>
+            <div class="project-container">
+                <div class="project-box">
+                    <a href="https://sanamehak.wixsite.com/portfolio/fashris"> <img src="img/ecomerce.jpg"
+                            alt="Project 1">
+                    </a>
+                    <h3>Project 1</h3>
+                    <p>FASHRIS ECOMMERCE APP</p>
+                </div>
+
+                <div class="project-box">
+                    <a href="https://sanamehak.wixsite.com/portfolio/coffee-app"><img src="img/coffee .jpg"
+                            alt="Project 2">
+                    </a>
+                    <h3>Project 2</h3>
+                    <p>COFFEE APP</p>
+                </div>
+                <div class="project-box">
+                    <a href="https://salimeen.com/"> <img src="img/salimeen.png" alt="Project 2">
+                    </a>
+                    <h3>Project 3</h3>
+                    <p>SALIMEEN MENTAL HEALTHCARE</p>
+                </div>
+                <div class="project-box">
+                    <a href="http/youtube%20clone/build/main%20file/index.html "> <img src="img/Youtube clone .png"
+                            alt="Project 2">
+                    </a>
+                    <h3>Project 4</h3>
+                    <p>YOUTUBE CLONE</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section id="contact">
+
+        <h2>Contact</h2>
+        <p>Connect with me on LinkedIn,Email or through phone call whatever suits you. Do check my GitHub and my
+            portfolio:</p>
+        <div class="contact-links">
+            <a href="https://www.linkedin.com/in/sana-mehak/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/sana-dev" target="_blank">GitHub</a>
+            <a href="https://sanamehak.wixsite.com/portfolio" target="_blank">Portfolio</a>
+            <a href=" Sana Mehak.pdf" download>Download CV</a>
+
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h1>Admin Form</h1>
+            <form id="adminForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" rows="4" required></textarea>
+
+                <button type="button" onclick="addEntry()">Add Entry</button>
+            </form>
+
+            <div id="entriesTable">
+                <h2>Entries</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Email</th>
+                            <th>Name</th>
+                            <th>Message</th>
+                        </tr>
+                    </thead>
+                    <tbody id="entriesBody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="portfolio.js">
+    </script>
+</body>
+
+</html>
