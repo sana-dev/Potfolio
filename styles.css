@@ -1,6 +1,6 @@
 *{
-    margin: 2px;
-    padding: 2px;
+  
+  font-weight: 500;
 }
 nav{
     background-color: #f7f7f7;
@@ -33,7 +33,7 @@ nav li{
 }
 nav a{
     height: 100%;
-    padding: 0 20px;
+    padding: 10px 40px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -95,10 +95,54 @@ nav a:hover{
 .hero{
     display: flex;
     align-items: center;
-    padding-left: 8px;
+    padding-left: 3rem;
     margin-left: 30px;
-    gap: 12px;
+  
 }
+h1{
+    color: #974fbb; 
+    position: relative;
+    font-weight: 590;
+
+  
+
+}
+  h1::after {
+    content: " ";
+    position: absolute;
+    background-color: #ffe9e9;
+    box-shadow: 0 0 8px #ffd6d6;
+    height: 15px;
+    left: -2%;
+    top: 75%;
+    transform: translateY(-50%); 
+    width: 60%;
+    z-index: -1;
+  }
+
+ @media (max-width: 800px) {
+    h1::after {
+        left: 12%; 
+        top: 75%; 
+        width: 75%; 
+    }
+  
+} 
+ @media (max-width: 300px)  {
+    h1::after {
+        left: 20%; 
+        top: 75%; 
+        width: 60%; 
+    }
+} 
+.hero-text{
+    color: #974fbb;
+}
+.hero-p{
+    font-size: 18px;
+    line-height:1.6;
+}
+ 
 .left-container{
     font-size: 20px;
     color: #3b3838;
@@ -118,6 +162,7 @@ nav a:hover{
         align-items: center;
         margin-left: 0;
         padding-left: 0;
+       padding-top: 20px;
     }
     .left-container{
         text-align: center;
@@ -134,16 +179,64 @@ nav a:hover{
 .socials img{
     width: 40px;
 }
-        
+    
+.profile-img
+{
+    object-fit: contain;
+    width: 70%;
+    border: 8px solid rgb(255, 255, 255);
+    outline: #5b5b5b solid 2px;
+    border-radius: 4%;
+    position: relative;
+    align-items:calc(20);
+  
+}
+   
 .btn{
     border-radius: 8px;
 }
+h2{
+    position: relative;
+    color: #974fbb;
+    text-align: center;
+}
+h2::after {
+    content: " ";
+    position: absolute;
+    background-color: #ffe9e9;
+    box-shadow: 0 0 8px #ffd6d6;
+    height: 15px;
+    left: 43%;
+    top: 85%;
+    transform: translateY(-50%); 
+    width: 15%;
+    z-index: -1;
+  } @media (max-width: 800px) {
+    h2::after {
+        left: 36%; 
+        top: 75%; 
+        width: 25%; 
+    }
+  
+} 
+ @media (max-width: 300px)  {
+    h2::after {
+        left: 30%; 
+        top: 75%; 
+        width: 50%; 
+    }
+} 
+
+
 .project-container {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-between; /* Adjust as needed */
+                justify-content: center; 
+
             }
-            
+            h2{
+                padding-left: 10px;
+            }
             .project-box {
                 width: 40%;
                 margin: 20px;
@@ -174,10 +267,15 @@ nav a:hover{
                     width: 90%;
                 }
             }
+            @media screen and (min-width: 770px) and (max-width: 870px) {
+                .project-box {
+                    width: 38%;
+                }
+            }
             
             @media screen and (min-width: 1020px) {
-                .project-container {
-                    justify-content: flex-start; /* Adjust as needed */
+                .tainer {
+                    justify-content: flex-start; 
                 }
             
                 .project-box {
@@ -213,12 +311,64 @@ nav a:hover{
     padding-right: 10px;
 }
 @media screen and (max-width: 900px) {
-    .contact-links {
-        width: 100%;
+  #about{
+    display: flex;
+    flex-direction: column;
+  }
+  }
+  @media screen and (min-width:800px) {
+    #about{
+        display: flex;
+       flex-direction: row;
     }
+  }
+#about{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-left: 2rem;
+    padding: 20px;
+}
+.left-container1{
+    padding-left: 3rem;
+
+}
+.right-container1{
+    padding-left: 2%;
+    line-height: 2;
+
+}
+@media screen  and(max-width:300px){
+    .left-container1{
+        display: flex;
+        align-items: center;
+    }
+    
+}
+.skills {
+    list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   margin: 20px auto 60px auto;
+   padding: 20px 10px;
 }
 
-
+li img{
+ 
+    width: 60px;
+    margin-bottom: 5px;
+}
+.skills li{
+    justify-self: center;
+    text-align: center;
+  padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 1rem;
+}
 .container {
     max-width: 800px;
     margin: 50px auto;
@@ -273,3 +423,6 @@ th {
    tbody{
     color: #ffffff;
    }
+
+
+ 
