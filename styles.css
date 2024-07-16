@@ -229,59 +229,67 @@ h2::after {
 
 
 .project-container {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
 
-            }
-            h2{
-                padding-left: 10px;
-            }
-            .project-box {
-                width: 40%;
-                margin: 20px;
-                padding: 20px;
-                border: 1px solid #ccc;
-                border-radius: 8px;
-                text-align: center;
-                transition: box-shadow 0.3s;
-            }
-            
-            .project-box:hover img, .project-box:hover h3 {
-                box-shadow: 0 4px 8px rgba(114, 176, 207, 0.5);
-            }
-            
-            .project-box img {
-                max-width: 100%;
-                height: auto;
-                border-radius: 6px;
-                margin-bottom: 10px;
-            }
-            
-            .project-box h3, .project-box p {
-                color:  #555555;
-            }
-            
-            @media screen and (max-width: 768px) {
-                .project-box {
-                    width: 90%;
-                }
-            }
-            @media screen and (min-width: 770px) and (max-width: 870px) {
-                .project-box {
-                    width: 38%;
-                }
-            }
-            
-            @media screen and (min-width: 1020px) {
-                .tainer {
-                    justify-content: flex-start; 
-                }
-            
-                .project-box {
-                    width: 40%;
-                }
-            }
+h2 {
+    padding-left: 10px;
+}
+
+.project-box {
+    width: 40%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+.project-box video {
+   /* Adjust the maximum height as needed */
+    object-fit: fill; /* Ensures the video fits within the specified height */
+}
+
+
+.project-box:hover img, .project-box:hover video, .project-box:hover h3 {
+    box-shadow: 0 4px 8px rgba(114, 176, 207, 0.5);
+}
+
+.project-box img, .project-box video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.project-box h3, .project-box p {
+    color: #555555;
+}
+
+@media screen and (max-width: 768px) {
+    .project-box {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 870px) {
+    .project-box {
+        width: 38%;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .tainer {
+        justify-content: flex-start; 
+    }
+
+    .project-box {
+        width: 40%;
+    }
+}
+
 .contact-links  {
     margin-bottom: 10px;
     font-size: 16px;
