@@ -227,6 +227,7 @@ h2::after {
 
 
 .project-container {
+
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center; 
@@ -285,7 +286,8 @@ h2::after {
                     width: 40%;
                 }
             }
-            
+
+
 .contact-links  {
     margin-bottom: 10px;
     font-size: 16px;
