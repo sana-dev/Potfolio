@@ -176,9 +176,7 @@ h1{
         max-width: 100%;
     }
 }
-.socials img{
-    width: 40px;
-}
+
     
 .profile-img
 {
@@ -238,7 +236,7 @@ h2::after {
                 padding-left: 10px;
             }
             .project-box {
-                width: 40%;
+                width: 60%;
                 margin: 20px;
                 padding: 20px;
                 border: 1px solid #ccc;
@@ -247,19 +245,23 @@ h2::after {
                 transition: box-shadow 0.3s;
             }
             
-            .project-box:hover img, .project-box:hover h3 {
+            .project-box:hover img, .project-box:hover video, .project-box:hover h3 {
                 box-shadow: 0 4px 8px rgba(114, 176, 207, 0.5);
             }
             
-            .project-box img {
+            .project-box img, .project-box video {
                 max-width: 100%;
-                height: auto;
                 border-radius: 6px;
                 margin-bottom: 10px;
             }
             
+            .project-box video {
+                max-height:90%; 
+                object-fit: fill; 
+            }
+            
             .project-box h3, .project-box p {
-                color:  #555555;
+                color: #555555;
             }
             
             @media screen and (max-width: 768px) {
@@ -267,6 +269,7 @@ h2::after {
                     width: 90%;
                 }
             }
+            
             @media screen and (min-width: 770px) and (max-width: 870px) {
                 .project-box {
                     width: 38%;
@@ -274,7 +277,7 @@ h2::after {
             }
             
             @media screen and (min-width: 1020px) {
-                .tainer {
+                .container {
                     justify-content: flex-start; 
                 }
             
@@ -282,6 +285,7 @@ h2::after {
                     width: 40%;
                 }
             }
+            
 .contact-links  {
     margin-bottom: 10px;
     font-size: 16px;
@@ -376,6 +380,27 @@ li img{
     padding: 20px;
     box-shadow: 0 0 10px #c295d8;
 }
+#contact{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2rem;
+    padding-left: 30px;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+    padding: 20px;
+}
+.socials img{
+    width: 40px;
+    padding: 20px;
+}
+
+
 
 form {
     margin-bottom: 20px;
