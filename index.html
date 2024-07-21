@@ -74,7 +74,7 @@
                     </a>
 
                     <h3>Project 1</h3>
-                    <p>FASHRIS ECOMMERCE APP</p>
+                    <p>BINGEY APP</p>
                 </div>
 
                 <div class="project-box">
@@ -83,11 +83,9 @@
                         <video src="img/frashir.mp4" loop muted autoplay></video>
                     </a>
                     <h3>Project 2</h3>
-                    <p>COFFEE APP</p>
-
-                    <video src="img/frashir.mp4" loop autoplay muted playsinline></video>
-                    <h3>Project 1</h3>
                     <p>FASHRIS ECOMMERCE APP</p>
+
+
 
                 </div>
 
@@ -97,9 +95,9 @@
                         <video src="img/weather.mp4" loop muted autoplay></video>
                     </a>
                     <h3>Project 3</h3>
-                    <p>SALIMEEN MENTAL HEALTHCARE</p>
+                    <p>WEATHER APP</p>
 
-                    
+
                 </div>
 
                 <div class="project-box">
@@ -110,7 +108,7 @@
                     <h3>Project 4</h3>
                     <p>YOUTUBE CLONE</p>
 
-             
+
                 </div>
 
                 <div class="project-box">
@@ -119,15 +117,19 @@
                         <video src="img/coffee 13.09.37.mp4" loop muted autoplay></video>
                     </a>
                     <h3>Project 5</h3>
-                    <p>BINGEY APP</p>
+                    <p>COFFEE APP</p>
 
                 </div>
 
                 <div class="project-box">
 
-                    <a href="https://cityweather01.netlify.app/">Project 6</a>
-                    <video src="img/bingey.mp4" loop muted autoplay></video>
+                    <a href="https://cityweather01.netlify.app/">
+                        <video src="img/bingey.mp4" loop muted autoplay></video>
+                    </a>
+                    <h3>Project 6</h3>
+                    <p>BINGEY APP</p>
                 </div>
+
 
             </div>
         </div>
@@ -203,37 +205,19 @@
     </div>
     <section>
         <div class="container">
-            <h1>Admin Form</h1>
-            <form id="adminForm">
+            <h1>let's Connect!</h1>
+            <form action="https://formspree.io/f/xanwqyvv" method="POST" id="adminForm">
                 <label for="email">Email:</label>
-                <input type="email" id="email" required>
+                <input type="email" id="email" name="email" autocomplete="off" required>
 
                 <label for="name">Name:</label>
-                <input type="text" id="name" required>
+                <input type="text" id="name" autocomplete="off" required>
 
                 <label for="message">Message:</label>
-                <textarea id="message" rows="4" required></textarea>
+                <textarea id="message" name="message" rows="4" autocomplete="off" required></textarea>
 
-                <button type="button" onclick="addEntry()">Add Entry</button>
+                <button onclick="sendMail()" type="submit">Submit</button>
             </form>
-
-
-            <div id="entriesTable">
-                <h2>Entries</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Email</th>
-                            <th>Name</th>
-                            <th>Message</th>
-                        </tr>
-                    </thead>
-                    <tbody id="entriesBody">
-
-                    </tbody>
-                </table>
-            </div>
-        </div>
     </section>
 
 
